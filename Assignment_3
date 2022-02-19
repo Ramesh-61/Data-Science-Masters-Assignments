@@ -1,0 +1,57 @@
+1. Why are functions advantageous to have in your programs?
+--> Function is a set of statements and perform specific task. By using function, code can be reused and it can run multiple times to perform the task.
+
+
+2. When does the code in a function run: when it's specified or when it's called?
+--> function will run when it is called.
+
+
+3. What statement creates a function?
+--> def keyword is used to create function. 
+function is created as follows:
+
+def function_name(arg1,arg2,...)
+
+function_name is name of the function specified after the def keyword followed by space.
+function will have arguments and it will be specified within parenthesis.
+
+4. What is the difference between a function and a function call?
+--> Function is a group of statements to perform specific task.
+Function call is an expression that invokes the function by providing the required parameters.
+
+5. How many global scopes are there in a Python program? How many local scopes?
+--> Global scope: There is only one global scope per program execution and this scope remains in existence until the program terminates.
+Local scope: Local scope is a block of code or body of function and variable defined inside this block of code will not be accessible outside the function.
+
+6. What happens to variables in a local scope when the function call returns?
+--> The variables in the local scope will be undefined or disappear when the function call returns.
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+--> Return statement is used inside the function and it returns the result to the function caller. Return statement end the execution of function.
+Return value can be specified in an expression, if no expression is specified then none is returned from the function.
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+--> None (null value) is returned from the function when the function does not have a return statement.
+
+9. How do you make a function variable refer to the global variable?
+--> global keyword is used to refer to the global variable.
+
+10. What is the data type of None?
+--> Datatype of None is NoneType and it is used to define null value to the variable.
+
+11. What does the sentence import areallyourpetsnamederic do?
+--> If there is no module created with the name areallyourpetsnamederic then Module Not find error will be thrown.
+If there is module areallyourpetsnamederic created, then it all the functions defined inside this module can be accessed.
+
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+--> spam.bacon() is used to call bacon() function defined inside spam module.
+
+13. What can you do to save a programme from crashing if it encounters an error?
+--> Exception handling can be used to save a program from crashing when it encounters an error.
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+--> In try clause, code will be written to perform some operation, purpose of try block is used to check for errors.
+When there is a error in the try block then code inside the except clause will execute and raise the exception.
+
+
