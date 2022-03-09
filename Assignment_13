@@ -1,0 +1,38 @@
+1. What advantages do Excel spreadsheets have over CSV spreadsheets?
+
+---> CSV files are not having below features but are available in Excel spreadsheets.
+     CSV can string type of values but excel can have different types of values.
+     CSV don’t have settings for font size or color
+     CSV don’t have multiple worksheets
+     CSV Can’t specify cell widths and heights
+     CSV Can’t have merged cells
+     CSV Can’t have images or charts embedded in them
+
+2. What do you pass to csv.reader() and csv.writer() to create reader and writer objects?
+
+---> file object created for the csv file need to be passed to the csv.reader and csv.writer() function to create reader and writer objects.
+
+3. What modes do File objects for reader and writer objects need to be opened in?
+
+---> Read mode ('r') need to be passed in the open function for reader and Write mode ('w') need to be passed for open function for writing.
+
+4. What method takes a list argument and writes it to a CSV file?
+
+---> writerow() method of the writer object takes list argument and writes to the csv file.
+
+5. What do the keyword arguments delimiter and line terminator do?
+
+---> Delimiter is a character that separates the cells in the row. In the CSV file, the default delimiter is comma, so each cell is separated by
+     comma. If the cells need to be separated by some other character such as tab, it need to be specified as delimiter argument
+     in the csv writer function.
+
+     Line terminator is a character that separates the rows or it appears at the end of line. By default, the line terminator is new line.
+     If the rows need to be separated by some other character then it need to be specified as line terminator argument.
+
+6. What function takes a string of JSON data and returns a Python data structure?
+
+---> loads() function of the json module takes string of JSON data and returns python value.
+
+7. What function takes a Python data structure and returns a string of JSON data?
+
+---> dumps() function of the json module takes python value and returns string of JSON data.
