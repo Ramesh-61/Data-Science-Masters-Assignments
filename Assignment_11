@@ -1,0 +1,62 @@
+1. Create an assert statement that throws an AssertionError if the variable spam is a negative integer.
+
+---> assert spam > 0, 'spam is a negative integer'
+
+2. Write an assert statement that triggers an AssertionError if the variables eggs and bacon contain
+strings that are the same as each other, even if their cases are different
+(that is, 'hello' and 'hello' are considered the same, and 'goodbye' and 'GOODbye' are also considered the same).
+
+---> assert eggs.casefold() != bacon.casefold(), 'eggs and bacon are same'
+
+3. Create an assert statement that throws an AssertionError every time.
+
+---> assert False, 'Trigger assertion all the time'
+
+4. What are the two lines that must be present in your software in order to call logging.debug()?
+
+---> import logging
+     logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -  %(levelname)  s -  %(message)s')
+
+5. What are the two lines that your program must have in order to have logging.debug() send a logging message to a file named programLog.txt?
+
+---> import logging
+     logging.basicConfig(filename='programLog.txt', level=logging.DEBUG, format=' %(asctime)s -  %(levelname)s -  %(message)s')
+
+6. What are the five levels of logging?
+
+---> 1.logging.debug()
+     2.logging.info()
+     3.logging.warning()
+     4.logging.error()
+     5.logging.critical()
+
+7. What line of code would you add to your software to disable all logging messages?
+
+---> logging.disable(logging.CRITICAL) statement is used to disable all logging messages
+
+8.Why is using logging messages better than using print() to display the same message?
+
+---> The advantage if using logging over print() statement is that once the debugging is done, programmer need to remove all the print() statements.
+     While doing so, he may remove the non-logging print statement as well. In case of logging, once the debugging is done, all the logging
+     messages are disabled using single statement logging.disable(logging.CRITICAL)
+
+9. What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?
+
+---> Step Over: When step over button is clicked, it executes the single line of code and if the line of code is function call,
+     then the function will be executed at full speed without jumping into the function and debugger will pause as soon as the
+     functon is executed.
+
+     Step In: when Step In button is clicked, it executes the line of code and if the line of code is function call, then the
+     debugger will jump into the function and pauses the execution on the first line of function.
+
+     Step Out: When the debugger is stepped into the function using step in button and when step out button is clicked, the debugger will execute
+     the lines of code inside the function at full speed and returns from the function.
+
+
+10.After you click Continue, when will the debugger stop ?
+
+---> When continue is clicked, debugger will stop when the program terminates or if any breakpoint is reached
+
+11. What is the concept of a breakpoint?
+
+---> A Breakpoint can be a set of specific line of code and forces the debugger to pause the execution when reaches this line.
