@@ -1,0 +1,54 @@
+1. In what modes should the PdfFileReader() and PdfFileWriter() File objects will be opened?
+
+---> PdfFileReader() file object will be opened in Read Binary ('rb') mode by passing 'rb' as second argument to open()
+     PdfFileWriter() file object will be opened in Write Binary ('wb') mode by passing 'wb' as second argument to open().
+
+2. From a PdfFileReader object, how do you get a Page object for page 5?
+
+---> PdfFileReader object has getPage() method with the argument as page number 4 to get the page 5.
+
+3. What PdfFileReader variable stores the number of pages in the PDF document?
+
+---> numPages variable stores the number of pages in the PDF document.
+
+4. If a PdfFileReader object’s PDF is encrypted with the password swordfish, what must you do before you can obtain Page objects from it?
+
+---> pdfreaderobject.decrypt('swordfish') is used to decrypt the encrypted pdf file before reading it.
+
+5. What methods do you use to rotate a page?
+
+---> rotateClockwise() and rotateCounterClockwise() methods of the page object rotate the page in 90 degree increments.
+
+6. What is the difference between a Run object and a Paragraph object?
+
+---> Paragraph object is created when user presses Enter or Return while typing in word document. Run object is continuous run of text
+     with the same style, new run object is created whenever the style changes. A paragraph can have one or more run objects since the
+     paragraph can have text with different size, font and style.
+
+7. How do you obtain a list of Paragraph objects for a Document object that’s stored in a variable named doc?
+
+---> Document object has paragraphs attribute (doc.paragraphs) that will return the list of paragraph objects.
+
+8. What type of object has bold, underline, italic, strike, and outline variables?
+
+---> Run object has bold, underline, italic, strike and outline attributes.
+
+9. What is the difference between False, True, and None for the bold variable?
+
+---> When bold is set to True for run object, the text always appears in Bold irrespective of the style set for run.
+     When bold is set to False, the text always appears in non-bold style.
+     When bold is set to None, the default style of the run object is applied for the text.
+
+10. How do you create a Document object for a new Word document?
+
+---> docx.Document() will create a document object for new word document.
+
+11. How do you add a paragraph with the text 'Hello, there!' to a Document object stored in a variable named doc?
+
+---> add_paragraph() method of document will add the paragraph of text to the document.
+     doc.add_paragraph('Hello, there!')
+
+12. What integers represent the levels of headings available in Word documents?
+
+---> Integers 0 to 4 represents the levels of heading.
+     0 makes the heading for title style and 1-4 are various heading levels.
