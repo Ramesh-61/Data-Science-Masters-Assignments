@@ -1,0 +1,47 @@
+1. What does RGBA stand for?
+
+---> RGBA stands for Red, Green, Blue and Alpha. RGBA value is a group of numbers represents the amount of red,blue,green and alpha in it.
+
+2. From the pillow module, how do you get the RGBA value of any images?
+
+---> Pillow module has Imagecolor.getcolor() function to get the RGBA tuple value of the color. The first argument is the color name string
+     and second argument should be string RGBA.
+
+     To get the RGB values of any image, need to use PIL.Image.Image.getpixel() function and pass x coordinate and y coordinate values of an image.
+
+3. What is a box tuple, and how does it work?
+
+---> Box tuple is tuple of four values that represents the rectangular region in the image. The four values are:
+     1.Left: The x co-ordinate of left most edge of the box.
+     2.Top: The y co-ordinate of the top edge of the box.
+     3.Right: The x co-ordinate of pixel to the right of  the right most side of the image.
+     4.Bottom: The y co-ordinate of pixel to the lower than the bottom edge of the box.
+
+     The box include the left and top co-ordinates and it goes up. The right co-ordinates increase from left to right from the origin and
+     Bottom co-ordinate increase going downward.
+
+4. Use your image and load in notebook then, How can you find out the width and height of an image object?
+
+---> size attribute of the image object contains width and height of an Image object.
+
+     open() function of the image object is used to load the image and returns the image object. Using size attribute of
+     this image object, width and height of the image will be known.
+
+5. What method would you call to get Image object for a 100×100 image, excluding the lower-left quarter of it?
+
+---> The resize() method of the image object returns the new image object of the specified width and height.
+
+     image_object.resize(50,100)
+
+6. After making changes to an Image object, how could you save it as an image file?
+
+---> save method of the image object will save the modified image in an image file.
+
+7. What module contains Pillow’s shape-drawing code?
+
+---> ImageDraw module contains Pillow's shape-drawing code.
+
+8. Image objects do not have drawing methods. What kind of object does? How do you get this kind of object?
+
+---> ImageDraw object has drawing methods. To get the image draw object, image object need to be passed to the draw method of the ImageDraw object.
+
